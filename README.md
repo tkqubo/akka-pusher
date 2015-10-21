@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/tkqubo/akka-pusher.png?label=ready&title=Ready)](https://waffle.io/tkqubo/akka-pusher)
 # akka-pusher
 
 [![Circle CI][circle-ci-image]][circle-ci-link]
