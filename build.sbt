@@ -2,28 +2,26 @@ organization := "com.github.dtaniwaki"
 
 name := "akka-pusher"
 
-scalaVersion := "2.11.7"
-crossScalaVersions := Seq("2.10.6", "2.11.7")
+scalaVersion := "2.11.8"
+crossScalaVersions := Seq("2.10.6", "2.11.8")
 
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 
-val akkaV = "2.3.14"
-val akkaHttpV = "2.0.1"
-val sprayJsonV = "1.3.2"
-val specs2V = "3.6.4"
+val akkaV = "2.4.6"
+val specs2V = "3.8.3"
 
 val developmentDependencies = Seq(
-  "com.typesafe.akka"   %%  "akka-actor"    % akkaV,
-  "com.typesafe.akka"   %%  "akka-http-core-experimental" % akkaHttpV,
-  "io.spray"            %%  "spray-json" % sprayJsonV,
-  "com.github.nscala-time" %% "nscala-time" % "2.2.0",
-  "org.slf4j"           %   "slf4j-api"     % "1.7.12"
+  "com.typesafe.akka"       %%  "akka-actor"                        % akkaV,
+  "com.typesafe.akka"       %%  "akka-http-core"                    % akkaV,
+  "com.typesafe.akka"       %%  "akka-http-spray-json-experimental" % akkaV,
+  "com.github.nscala-time"  %%  "nscala-time"                       % "2.2.0",
+  "org.slf4j"               %   "slf4j-api"                         % "1.7.12"
 )
 val developmentDependencies_2_11 = Seq(
-  "net.ceedubs"                %% "ficus"         % "1.1.2"
+  "net.ceedubs"             %%  "ficus"                             % "1.1.2"
 )
 val developmentDependencies_2_10 = Seq(
-  "net.ceedubs"                %% "ficus"             % "1.0.1"
+  "net.ceedubs"             %% "ficus"                              % "1.0.1"
 )
 val testDependencies = Seq(
   "com.typesafe.akka"   %%  "akka-testkit"  % akkaV % "test",
